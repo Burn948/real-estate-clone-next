@@ -31,7 +31,7 @@ const BlogSection = () => {
             {/* Right Image */}
             <div className="relative">
               <img 
-                src="/public/images/property-1.jpg" 
+                src="/images/chrome_91ffonkNqs.png" 
                 alt="Modern building in Belgrade cityscape at sunset"
                 className="w-full h-[400px] object-cover rounded-lg shadow-lg"
               />
