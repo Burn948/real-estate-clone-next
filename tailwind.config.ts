@@ -47,15 +47,33 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        // Brand colors
+        brand: {
+          primary: "hsl(var(--color-primary))",
+          white: "hsl(var(--color-white))",
+          bg: "hsl(var(--color-bg))",
+          "bg-alt": "hsl(var(--color-bg-alt))",
+          "gray-bg": "hsl(var(--color-gray-bg))",
+        },
+      },
+      fontFamily: {
+        heading: ['EB Garamond', 'serif'],
+        body: ['Cormorant Garamond', 'serif'],
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+          sm: '1rem',
+          md: '1.5rem',
+          lg: '2rem',
+        },
+        screens: {
+          sm: '640px',
+          md: '768px',
+          lg: '1024px',
+          xl: '1280px',
+          '2xl': '1200px', // Custom max-width
         },
       },
       borderRadius: {

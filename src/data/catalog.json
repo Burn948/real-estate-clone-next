@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Luxury Apartment in Dukley Gardens",
+    "location": "Budva, Montenegro",
+    "description": "Beautiful modern apartment with mountain views in the prestigious Dukley Gardens development. Features premium finishes and access to resort amenities.",
+    "price_eur": 450000,
+    "size_sqm": 95,
+    "bathrooms": 2,
+    "rooms": 3,
+    "image": "/images/property-1.jpg",
+    "slug": "luxury-apartment-dukley-gardens"
+  },
+  {
+    "title": "Waterfront Villa in Lustica Bay",
+    "location": "Lustica Peninsula, Montenegro",
+    "description": "Stunning villa with direct sea access and panoramic Adriatic views. Traditional stone architecture meets modern luxury.",
+    "price_eur": 890000,
+    "size_sqm": 180,
+    "bathrooms": 3,
+    "rooms": 4,
+    "image": "/images/property-2.jpg",
+    "slug": "waterfront-villa-lustica-bay"
+  },
+  {
+    "title": "Penthouse in Porto Montenegro",
+    "location": "Tivat, Montenegro",
+    "description": "Exclusive penthouse in the heart of Porto Montenegro yacht marina. Luxury living with premium yacht berth included.",
+    "price_eur": 1200000,
+    "size_sqm": 150,
+    "bathrooms": 3,
+    "rooms": 3,
+    "image": "/images/property-3.jpg",
+    "slug": "penthouse-porto-montenegro"
+  },
+  {
+    "title": "Modern Apartment in Porto Novi",
+    "location": "Herceg Novi, Montenegro",
+    "description": "Contemporary apartment in the exclusive Porto Novi resort with access to world-class amenities and pristine beaches.",
+    "price_eur": 320000,
+    "size_sqm": 75,
+    "bathrooms": 1,
+    "rooms": 2,
+    "image": "/images/property-1.jpg",
+    "slug": "modern-apartment-porto-novi"
+  },
+  {
+    "title": "Seaside Villa with Pool",
+    "location": "Kotor Bay, Montenegro",
+    "description": "Magnificent villa overlooking the UNESCO-protected Kotor Bay. Private pool, garden, and boat dock included.",
+    "price_eur": 750000,
+    "size_sqm": 220,
+    "bathrooms": 4,
+    "rooms": 5,
+    "image": "/images/property-2.jpg",
+    "slug": "seaside-villa-kotor-bay"
+  },
+  {
+    "title": "Mountain Retreat in Zabljak",
+    "location": "Zabljak, Montenegro",
+    "description": "Peaceful mountain cabin near Durmitor National Park. Perfect for nature lovers seeking tranquility and adventure.",
+    "price_eur": 180000,
+    "size_sqm": 120,
+    "bathrooms": 2,
+    "rooms": 3,
+    "image": "/images/property-3.jpg",
+    "slug": "mountain-retreat-zabljak"
+  }
+]

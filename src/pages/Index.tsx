@@ -1,13 +1,33 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import Navigation from '../components/Navigation';
+import Hero from '../components/Hero';
+import AreaTiles from '../components/AreaTiles';
+import FeaturedProperties from '../components/FeaturedProperties';
+import Newsletter from '../components/Newsletter';
+import Footer from '../components/Footer';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <>
+      <Helmet>
+        <title>Find New Home - Discover Your Perfect Property in Montenegro</title>
+        <meta name="description" content="Check our luxury properties of distinguished style, location and charm in different regions of Montenegro. Find your dream home today." />
+        <meta property="og:title" content="Find New Home - Discover Your Perfect Property in Montenegro" />
+        <meta property="og:description" content="Check our luxury properties of distinguished style, location and charm in different regions of Montenegro. Find your dream home today." />
+      </Helmet>
+      
+      <div className="min-h-screen bg-background">
+        <Navigation />
+        <main>
+          <Hero />
+          <AreaTiles />
+          <FeaturedProperties />
+          <Newsletter />
+        </main>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 

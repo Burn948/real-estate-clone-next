@@ -2,57 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Find New Home Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
+    /* Brand Colors */
+    --color-primary: 200 22% 30%; /* #324158 converted to HSL */
+    --color-white: 0 0% 100%;
+    --color-bg: 0 0% 100%;
+    --color-bg-alt: 60 29% 93%; /* #F5F5DD converted to HSL */
+    --color-gray-bg: 0 0% 97%; /* #F7F7F7 converted to HSL */
+    
+    /* Semantic Colors */
+    --background: var(--color-bg);
+    --foreground: var(--color-primary);
+    
+    --card: var(--color-white);
+    --card-foreground: var(--color-primary);
+    
+    --popover: var(--color-white);
+    --popover-foreground: var(--color-primary);
+    
+    --primary: var(--color-primary);
+    --primary-foreground: var(--color-white);
+    
+    --secondary: var(--color-gray-bg);
+    --secondary-foreground: var(--color-primary);
+    
+    --muted: var(--color-gray-bg);
+    --muted-foreground: 200 22% 50%;
+    
+    --accent: var(--color-bg-alt);
+    --accent-foreground: var(--color-primary);
+    
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
+    --destructive-foreground: var(--color-white);
+    
+    --border: 200 10% 85%;
+    --input: 200 10% 85%;
+    --ring: var(--color-primary);
+    
     --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* Gradients */
+    --gradient-overlay: linear-gradient(to top, hsl(var(--color-primary) / 0.8), transparent);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Shadows */
+    --shadow-card: 0 4px 6px -1px hsl(var(--color-primary) / 0.1);
+    --shadow-card-hover: 0 10px 15px -3px hsl(var(--color-primary) / 0.15);
   }
 
   .dark {
@@ -100,6 +100,84 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
+  }
+  
+  /* Typography Classes */
+  .font-heading {
+    font-family: 'EB Garamond', serif;
+  }
+  
+  .font-body {
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .heading {
+    @apply font-heading;
+  }
+  
+  /* Custom Component Styles */
+  .area-tile {
+    position: relative;
+    overflow: hidden;
+    border-radius: calc(var(--radius) + 2px);
+    transition: var(--transition-smooth);
+    aspect-ratio: 4/3;
+  }
+  
+  .area-tile:hover {
+    transform: scale(1.01);
+  }
+  
+  .area-tile::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-overlay);
+  }
+  
+  .property-card {
+    border-radius: calc(var(--radius) + 4px);
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-smooth);
+    overflow: hidden;
+  }
+  
+  .property-card:hover {
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-2px);
+  }
+  
+  /* Utility Classes */
+  .text-shadow-lg {
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .container-custom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .container-custom {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container-custom {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
 }
