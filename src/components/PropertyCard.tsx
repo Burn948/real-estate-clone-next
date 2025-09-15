@@ -28,9 +28,9 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
   };
 
   return (
-    <div className="property-card bg-white">
+    <div className="bg-white border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
       {/* Image */}
-      <div className="relative aspect-[16/10] overflow-hidden">
+      <div className="relative aspect-[4/3] overflow-hidden">
         <img
           src={property.image}
           alt={property.title}
@@ -40,48 +40,29 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
       
       {/* Content */}
       <div className="p-6 space-y-4">
-        {/* Title and Location */}
-        <div className="space-y-1">
-          <h3 className="font-heading font-semibold text-xl text-primary">
-            {property.title}
-          </h3>
-          <p className="font-body text-sm text-muted-foreground">
-            {property.location}
-          </p>
-        </div>
+        {/* Title */}
+        <h3 className="font-heading text-xl text-primary text-center">
+          {property.title}
+        </h3>
         
-        {/* Description */}
-        <p className="font-body text-foreground line-clamp-2 text-sm leading-relaxed">
-          {property.description}
+        {/* Location */}
+        <p className="font-body text-sm text-primary/70 text-center border-b border-gray-200 pb-2">
+          {property.location}
         </p>
         
         {/* Price */}
-        <div className="pt-2">
-          <span className="font-heading font-semibold text-2xl text-primary">
+        <div className="text-center py-2">
+          <span className="font-heading text-2xl text-primary">
             {formatPrice(property.price_eur)}
           </span>
         </div>
         
-        {/* Meta Information */}
-        <div className="flex items-center space-x-4 pt-2 border-t border-gray-100">
-          <div className="flex items-center space-x-1 text-muted-foreground">
-            <Square className="w-4 h-4" />
-            <span className="font-body text-sm">{property.size_sqm} m²</span>
-          </div>
-          <div className="flex items-center space-x-1 text-muted-foreground">
-            <Bed className="w-4 h-4" />
-            <span className="font-body text-sm">{property.rooms}</span>
-          </div>
-          <div className="flex items-center space-x-1 text-muted-foreground">
-            <Bath className="w-4 h-4" />
-            <span className="font-body text-sm">{property.bathrooms}</span>
-          </div>
-        </div>
-        
         {/* CTA Button */}
-        <button className="w-full bg-primary text-primary-foreground font-body font-medium py-3 px-6 rounded-md hover:opacity-90 transition-opacity">
-          Details
-        </button>
+        <div className="text-center">
+          <button className="px-8 py-2 border border-primary text-primary font-body hover:bg-primary hover:text-white transition-colors">
+            Details
+          </button>
+        </div>
       </div>
     </div>
   );

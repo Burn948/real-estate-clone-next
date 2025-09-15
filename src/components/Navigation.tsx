@@ -36,6 +36,24 @@ const Navigation = () => {
               Home
             </a>
             <a 
+              href="#" 
+              className="font-body text-base text-foreground hover:text-primary transition-all duration-200"
+            >
+              About Us
+            </a>
+            <a 
+              href="#" 
+              className="font-body text-base text-foreground hover:text-primary transition-all duration-200"
+            >
+              Contact
+            </a>
+            <a 
+              href="#" 
+              className="font-body text-base text-foreground hover:text-primary transition-all duration-200"
+            >
+              Blog
+            </a>
+            <a 
               href="/catalog" 
               className={`font-body text-base transition-all duration-200 ${
                 isActive('/catalog') 
@@ -45,6 +63,13 @@ const Navigation = () => {
             >
               Catalog
             </a>
+          </div>
+          
+          {/* Language Selector */}
+          <div className="ml-4">
+            <button className="flex items-center justify-center w-8 h-8 rounded bg-red-500 text-white text-sm font-semibold">
+              🇲🇪
+            </button>
           </div>
         </div>
       </div>

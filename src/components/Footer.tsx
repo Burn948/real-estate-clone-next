@@ -2,45 +2,93 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="border-t border-gray-200 pt-16 pb-16">
-      <div className="container-custom">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          {/* Brand Section */}
-          <div className="space-y-4">
-            <h3 className="font-heading font-semibold text-xl text-primary">
-              Find New Home
-            </h3>
-            <p className="font-body text-muted-foreground max-w-md">
-              Discover luxury properties in Montenegro's most prestigious locations.
-            </p>
-          </div>
-          
-          {/* Quick Links */}
-          <div className="md:text-right">
-            <h4 className="font-heading font-medium text-primary mb-4">
-              Quick Links
-            </h4>
-            <div className="space-y-2">
+    <footer className="bg-primary text-white">
+      <div className="container-custom py-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {/* Useful Links */}
+          <div>
+            <h4 className="font-heading text-lg mb-6 text-white">Useful Links</h4>
+            <div className="space-y-3">
               <a 
-                href="/" 
-                className="block font-body text-muted-foreground hover:text-primary transition-colors"
+                href="#" 
+                className="block font-body text-white/70 hover:text-white transition-colors"
               >
-                Home
+                Moving to Montenegro
               </a>
               <a 
-                href="/catalog" 
-                className="block font-body text-muted-foreground hover:text-primary transition-colors"
+                href="#" 
+                className="block font-body text-white/70 hover:text-white transition-colors"
               >
-                Catalog
+                How to use this site
+              </a>
+            </div>
+          </div>
+          
+          {/* Corporate */}
+          <div>
+            <h4 className="font-heading text-lg mb-6 text-white">Corporate</h4>
+            <div className="space-y-3">
+              <a 
+                href="#" 
+                className="block font-body text-white/70 hover:text-white transition-colors"
+              >
+                About Us
+              </a>
+              <a 
+                href="#" 
+                className="block font-body text-white/70 hover:text-white transition-colors"
+              >
+                Blog
+              </a>
+              <a 
+                href="#" 
+                className="block font-body text-white/70 hover:text-white transition-colors"
+              >
+                Privacy Policy
+              </a>
+            </div>
+          </div>
+          
+          {/* Support */}
+          <div>
+            <h4 className="font-heading text-lg mb-6 text-white">Support</h4>
+            <div className="space-y-3">
+              <a 
+                href="#" 
+                className="block font-body text-white/70 hover:text-white transition-colors"
+              >
+                Contact Us
+              </a>
+              <a 
+                href="#" 
+                className="block font-body text-white/70 hover:text-white transition-colors"
+              >
+                About Us
+              </a>
+            </div>
+          </div>
+          
+          {/* Follow Us */}
+          <div>
+            <h4 className="font-heading text-lg mb-6 text-white">Follow Us</h4>
+            <div className="flex space-x-3">
+              <a href="#" className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors">
+                <span className="text-xs">📷</span>
+              </a>
+              <a href="#" className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors">
+                <span className="text-xs">📱</span>
+              </a>
+              <a href="#" className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors">
+                <span className="text-xs">📧</span>
               </a>
             </div>
           </div>
         </div>
         
         {/* Copyright */}
-        <div className="mt-12 pt-8 border-t border-gray-200 text-center">
-          <p className="font-body text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Find New Home. All rights reserved.
+        <div className="mt-12 pt-8 border-t border-white/20 text-center">
+          <p className="font-body text-sm text-white/70">
+            ©2024 by Timofei Miloradovich
           </p>
         </div>
       </div>

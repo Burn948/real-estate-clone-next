@@ -4,6 +4,8 @@ import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
 import AreaTiles from '../components/AreaTiles';
 import FeaturedProperties from '../components/FeaturedProperties';
+import ServicesSection from '../components/ServicesSections';
+import BlogSection from '../components/BlogSection';
 import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
 
@@ -23,6 +25,8 @@ const Index = () => {
           <Hero />
           <AreaTiles />
           <FeaturedProperties />
+          <ServicesSection />
+          <BlogSection />
           <Newsletter />
         </main>
         <Footer />

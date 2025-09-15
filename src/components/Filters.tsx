@@ -36,111 +36,95 @@ const Filters: React.FC<FiltersProps> = ({ filters, onFilterChange }) => {
   };
 
   return (
-    <div className="bg-white p-6 rounded-xl border border-gray-200 sticky top-24">
-      <div className="flex items-center justify-between mb-6">
-        <h3 className="font-heading font-semibold text-xl text-primary">
-          Filters
-        </h3>
-        <button
-          onClick={resetFilters}
-          className="font-body text-sm text-primary hover:text-primary/80 transition-colors"
-        >
-          Reset filters
-        </button>
-      </div>
-      
-      <div className="space-y-6">
-        {/* Price Range */}
+    <div className="mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-6">
+        {/* Type of Deal */}
         <div>
-          <h4 className="font-heading font-medium text-primary mb-3">Price (EUR)</h4>
-          <div className="grid grid-cols-2 gap-3">
-            <input
-              type="number"
-              placeholder="Min"
-              value={filters.minPrice}
-              onChange={(e) => handleInputChange('minPrice', e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md font-body text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-            />
-            <input
-              type="number"
-              placeholder="Max"
-              value={filters.maxPrice}
-              onChange={(e) => handleInputChange('maxPrice', e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md font-body text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-            />
-          </div>
+          <select className="w-full px-4 py-3 border border-gray-300 rounded-md font-body text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+            <option>Type of Deal</option>
+            <option>For Sale</option>
+            <option>For Rent</option>
+          </select>
         </div>
-
+        
         {/* Location */}
         <div>
-          <h4 className="font-heading font-medium text-primary mb-3">Location</h4>
-          <input
-            type="text"
-            placeholder="Search by location..."
-            value={filters.location}
-            onChange={(e) => handleInputChange('location', e.target.value)}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md font-body text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-          />
+          <select className="w-full px-4 py-3 border border-gray-300 rounded-md font-body text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+            <option>Location</option>
+            <option>Lustica Bay</option>
+            <option>Dukley Gardens</option>
+            <option>Porto Novi</option>
+            <option>Porto Montenegro</option>
+          </select>
         </div>
-
-        {/* Size Range */}
+        
+        {/* Property Type */}
         <div>
-          <h4 className="font-heading font-medium text-primary mb-3">Size (m²)</h4>
-          <div className="grid grid-cols-2 gap-3">
+          <select className="w-full px-4 py-3 border border-gray-300 rounded-md font-body text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+            <option>Property Type</option>
+            <option>Apartment</option>
+            <option>Villa</option>
+            <option>House</option>
+          </select>
+        </div>
+        
+        {/* Additional filters */}
+        <div>
+          <select className="w-full px-4 py-3 border border-gray-300 rounded-md font-body text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+            <option>Additional filters</option>
+            <option>Sea View</option>
+            <option>Pool</option>
+            <option>Garden</option>
+          </select>
+        </div>
+      </div>
+      
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {/* Filter by Price */}
+        <div>
+          <label className="block font-body text-primary text-sm mb-2">Filter by Price</label>
+          <div className="flex items-center space-x-2">
             <input
-              type="number"
-              placeholder="Min"
-              value={filters.minSize}
-              onChange={(e) => handleInputChange('minSize', e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md font-body text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+              type="range"
+              min="100000"
+              max="2000000"
+              value={filters.minPrice || "100000"}
+              onChange={(e) => handleInputChange('minPrice', e.target.value)}
+              className="flex-1"
             />
-            <input
-              type="number"
-              placeholder="Max"
-              value={filters.maxSize}
-              onChange={(e) => handleInputChange('maxSize', e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md font-body text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-            />
+            <span className="text-xs text-primary">€{filters.minPrice || "100K"} - €2M</span>
           </div>
         </div>
-
-        {/* Rooms */}
+        
+        {/* Filter by Property Size */}
         <div>
-          <h4 className="font-heading font-medium text-primary mb-3">Rooms (min)</h4>
-          <input
-            type="number"
-            placeholder="Number of rooms"
-            value={filters.rooms}
-            onChange={(e) => handleInputChange('rooms', e.target.value)}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md font-body text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-          />
+          <label className="block font-body text-primary text-sm mb-2">Filter by Property Size</label>
+          <div className="flex items-center space-x-2">
+            <input
+              type="range"
+              min="50"
+              max="500"
+              value={filters.minSize || "50"}
+              onChange={(e) => handleInputChange('minSize', e.target.value)}
+              className="flex-1"
+            />
+            <span className="text-xs text-primary">{filters.minSize || "50"}m² - 500m²</span>
+          </div>
         </div>
-
-        {/* Bathrooms */}
+        
+        {/* Filter by Rooms */}
         <div>
-          <h4 className="font-heading font-medium text-primary mb-3">Bathrooms (min)</h4>
-          <input
-            type="number"
-            placeholder="Number of bathrooms"
-            value={filters.bathrooms}
-            onChange={(e) => handleInputChange('bathrooms', e.target.value)}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md font-body text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-          />
-        </div>
-
-        {/* Amenities (UI only) */}
-        <div>
-          <h4 className="font-heading font-medium text-primary mb-3">Amenities</h4>
-          <div className="space-y-2">
-            {['Pool', 'Gym', 'Parking', 'Sea View', 'Garden'].map((amenity) => (
-              <label key={amenity} className="flex items-center space-x-2">
-                <input
-                  type="checkbox"
-                  className="rounded border-gray-300 text-primary focus:ring-primary"
-                />
-                <span className="font-body text-sm text-foreground">{amenity}</span>
-              </label>
-            ))}
+          <label className="block font-body text-primary text-sm mb-2">Filter by Rooms</label>
+          <div className="flex items-center space-x-2">
+            <input
+              type="range"
+              min="1"
+              max="8"
+              value={filters.rooms || "1"}
+              onChange={(e) => handleInputChange('rooms', e.target.value)}
+              className="flex-1"
+            />
+            <span className="text-xs text-primary">{filters.rooms || "1"} - 8 rooms</span>
           </div>
         </div>
       </div>
