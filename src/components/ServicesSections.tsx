@@ -9,7 +9,7 @@ const ServicesSection = () => {
           <div className="relative group">
             <div className="relative overflow-hidden rounded-lg">
               <img 
-                src="/public/images/1.jpg" 
+                src="/public/images/property-2.jpg" 
                 alt="Luxury villa with pool and mountain views"
                 className="w-full h-[300px] object-cover transition-transform duration-300 group-hover:scale-105"
               />
@@ -28,7 +28,7 @@ const ServicesSection = () => {
           <div className="relative group">
             <div className="relative overflow-hidden rounded-lg">
               <img 
-                src="/public/images/233.jpg" 
+                src="/public/images/property-3.jpg" 
                 alt="Architectural rendering of modern development project"
                 className="w-full h-[300px] object-cover transition-transform duration-300 group-hover:scale-105"
               />
