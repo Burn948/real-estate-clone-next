@@ -1,8 +1,8 @@
 import React from 'react';
 import lusticaBayImage from '../../public/images/Lushtikabay.png';
-import dukleyGardensImage from '../../public/images/Dukley Gardens.jpg';
+import dukleyGardensImage from '../../public/images/Dukley-Gardens.jpg';
 import portoNoviImage from '../../public/images/chrome_Qt02rhw609.png';
-import portoMontenegroImage from '../../public/images/Porto montengro.png';
+import portoMontenegroImage from '../../public/images/Porto-montengro.png';
 import generalCatalogImage from '../../public/images/pexels-kate-holovacheva-1824230-9743746.jpg';
 
 interface AreaTile {
