@@ -1,68 +1,79 @@
 [
   {
-    "title": "Luxury Apartment in Dukley Gardens",
-    "location": "Budva, Montenegro",
-    "description": "Beautiful modern apartment with mountain views in the prestigious Dukley Gardens development. Features premium finishes and access to resort amenities.",
-    "price_eur": 450000,
-    "size_sqm": 95,
+    "title": "Apartment in Dukley Gardens",
+    "location": "Podgorica, Montenegro",
+    "description": "Beautiful apartment in Dukley Gardens",
+    "price_eur": 300000,
+    "size_sqm": 170,
     "bathrooms": 2,
     "rooms": 3,
-    "image": "/images/property-1.jpg",
-    "slug": "luxury-apartment-dukley-gardens"
+    "image": "/images/pexels-pixabay-259950.jpg",
+    "slug": "apartment-in-dukley-gardens"
   },
   {
-    "title": "Waterfront Villa in Lustica Bay",
-    "location": "Lustica Peninsula, Montenegro",
-    "description": "Stunning villa with direct sea access and panoramic Adriatic views. Traditional stone architecture meets modern luxury.",
-    "price_eur": 890000,
-    "size_sqm": 180,
+    "title": "Апартамент с одной спальней на Lustica Bay",
+    "location": "Lustica Bay Marina, Zaliv, Bigova, Montenegro",
+    "description": "Роскошная квартира на последнем этаже в доме IRIS, район Marina Village.",
+    "price_eur": 750000,
+    "size_sqm": 94,
+    "bathrooms": 2,
+    "rooms": 1,
+    "image": "/images/photo_5_2024-06-24_07-23-07.jpg",
+    "slug": "apartment-lustica-bay-iris"
+  },
+  {
+    "title": "Новая квартира в жилом комплексе Status",
+    "location": "Бечичи, Montenegro",
+    "description": "Просторная и светлая квартира с современной отделкой и мебелью",
+    "price_eur": 275000,
+    "size_sqm": 73,
+    "bathrooms": 2,
+    "rooms": 2,
+    "image": "/images/photo_1_2024-06-23_18-28-30.jpg",
+    "slug": "new-apartment-status-complex"
+  },
+  {
+    "title": "Home in Porto Montenegro",
+    "location": "Belgrade, Serbia",
+    "description": "Beautiful home in Porto Montenegro",
+    "price_eur": 500000,
+    "size_sqm": 200,
     "bathrooms": 3,
     "rooms": 4,
-    "image": "/images/property-2.jpg",
-    "slug": "waterfront-villa-lustica-bay"
+    "image": "/images/pexels-binyamin-mellish-186077.jpg",
+    "slug": "home-in-porto-montenegro"
   },
   {
-    "title": "Penthouse in Porto Montenegro",
-    "location": "Tivat, Montenegro",
-    "description": "Exclusive penthouse in the heart of Porto Montenegro yacht marina. Luxury living with premium yacht berth included.",
-    "price_eur": 1200000,
-    "size_sqm": 150,
-    "bathrooms": 3,
-    "rooms": 3,
-    "image": "/images/property-3.jpg",
-    "slug": "penthouse-porto-montenegro"
-  },
-  {
-    "title": "Modern Apartment in Porto Novi",
-    "location": "Herceg Novi, Montenegro",
-    "description": "Contemporary apartment in the exclusive Porto Novi resort with access to world-class amenities and pristine beaches.",
-    "price_eur": 320000,
-    "size_sqm": 75,
+    "title": "Квартира в центре Будвы по адресу Blaža Jovanovića",
+    "location": "Blaža Jovanovića, Budva, Montenegro",
+    "description": "Квартира с качественным ремонтом, новой мебелью и техникой от собственника.",
+    "price_eur": 241500,
+    "size_sqm": 67,
     "bathrooms": 1,
     "rooms": 2,
-    "image": "/images/property-1.jpg",
-    "slug": "modern-apartment-porto-novi"
+    "image": "/images/photo_5_2024-06-24_07-11-57.jpg",
+    "slug": "apartment-budva-bj"
   },
   {
-    "title": "Seaside Villa with Pool",
-    "location": "Kotor Bay, Montenegro",
-    "description": "Magnificent villa overlooking the UNESCO-protected Kotor Bay. Private pool, garden, and boat dock included.",
-    "price_eur": 750000,
-    "size_sqm": 220,
-    "bathrooms": 4,
+    "title": "Villa in Porto Novi",
+    "location": "Budva, Montenegro",
+    "description": "Beautiful Villa in Porto Novi",
+    "price_eur": 800000,
+    "size_sqm": 230,
+    "bathrooms": 3,
     "rooms": 5,
-    "image": "/images/property-2.jpg",
-    "slug": "seaside-villa-kotor-bay"
+    "image": "/images/pexels-pixabay-221457.jpg",
+    "slug": "villa-porto-novi"
   },
   {
-    "title": "Mountain Retreat in Zabljak",
-    "location": "Zabljak, Montenegro",
-    "description": "Peaceful mountain cabin near Durmitor National Park. Perfect for nature lovers seeking tranquility and adventure.",
-    "price_eur": 180000,
-    "size_sqm": 120,
-    "bathrooms": 2,
-    "rooms": 3,
-    "image": "/images/property-3.jpg",
-    "slug": "mountain-retreat-zabljak"
+    "title": "Квартира с одной спальней в центре Будвы",
+    "location": "Podmaine, Budva, Montenegro",
+    "description": "Продается просторная однокомнатная квартира площадью 65 м² в центре Будвы, в районе Podmaine, неподалеку от ресторана Parma",
+    "price_eur": 150000,
+    "size_sqm": 65,
+    "bathrooms": 1,
+    "rooms": 1,
+    "image": "/images/photo_4_2024-06-23_18-01-03.jpg",
+    "slug": "onebed-apartment-budva-podmaine"
   }
 ]
