@@ -1,6 +1,6 @@
 import React from 'react';
 import { Search } from 'lucide-react';
-import heroImage from '../assets/hero-image.jpg';
+import heroImage from '../images/pexels-kate-holovacheva-1824230-9743746.jpg';
 
 const Hero = () => {
   return (
