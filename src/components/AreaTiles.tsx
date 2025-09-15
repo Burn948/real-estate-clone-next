@@ -1,9 +1,9 @@
 import React from 'react';
-import lusticaBayImage from '../../public/images/Lushtikabay.jpg';
-import dukleyGardensImage from '../../public/images/Dukley Gardens.jpg';
-import portoNoviImage from '../../public/images/chrome_Qt02rhw609.jpg';
-import portoMontenegroImage from '../../public/images/Porto montengro.jpg';
-import generalCatalogImage from '../../public/images/pexels-kate-holovacheva-1824230-9743746.jpg';
+import lusticaBayImage from '../assets/lustica-bay.jpg';
+import dukleyGardensImage from '../assets/dukley-gardens.jpg';
+import portoNoviImage from '../assets/porto-novi.jpg';
+import portoMontenegroImage from '../assets/porto-montenegro.jpg';
+import generalCatalogImage from '../assets/general-catalog.jpg';
 
 interface AreaTile {
   title: string;
